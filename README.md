@@ -1,9 +1,15 @@
 # Devesh Properties — Royal Pride Plot Studio
 
-Static GitHub Pages prototype for plot-by-plot discovery and local inventory editing.
+Static site prototype for plot-by-plot discovery and local inventory editing.
 
-## Deploy
-The workflow at `.github/workflows/pages.yml` publishes this static site through GitHub Pages.
+## One-time GitHub Pages setup
+The repository is connected to a deployment workflow, but GitHub blocks the workflow token from enabling Pages the first time. Complete this once as the repository owner:
+
+1. Open **[Settings → Pages](https://github.com/ericdevesh/devesh-properties/settings/pages)**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** and save.
+3. Open **[Actions → Deploy Plot Studio to GitHub Pages](https://github.com/ericdevesh/devesh-properties/actions)** and re-run the latest failed run.
+
+Future pushes to `main` that change `index.html`, `README.md`, or the Pages workflow deploy automatically.
 
 ## Prototype limitations
 - Plot tiles are a schematic inventory finder, not an official surveyed/site plan.
